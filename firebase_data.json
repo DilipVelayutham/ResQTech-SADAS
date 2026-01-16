@@ -1,0 +1,28 @@
+{
+  "accidents": [
+    {
+      "date": "15-02-2026",
+      "time": "10:30 AM",
+      "latitude": 12.9716,
+      "longitude": 77.5946,
+      "status": "Alert Sent",
+      "severity": "High"
+    },
+    {
+      "date": "16-02-2026",
+      "time": "08:15 PM",
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "status": "Cancelled",
+      "severity": "Low"
+    },
+    {
+      "date": "17-02-2026",
+      "time": "06:45 PM",
+      "latitude": 17.3850,
+      "longitude": 78.4867,
+      "status": "Resolved",
+      "severity": "Medium"
+    }
+  ]
+}

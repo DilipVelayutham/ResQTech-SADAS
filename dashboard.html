@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Accident Detection Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+</head>
+<body>
+<h1>Smart Accident Detection & Emergency Alert System</h1>
+<center>
+<button class="download-btn" onclick="downloadPDF()">
+    Download Accident Report (PDF)
+</button>
+</center>
+<div class="container">
+    <div id="alertPopup" class="alert-popup">
+    🚨 New Accident Detected!
+</div>
+<div class="summary">
+    <div class="card total">
+        <h3>Total Accidents</h3>
+        <p id="totalCount">0</p>
+    </div>
+    <div class="card alert">
+        <h3>Alerts Sent</h3>
+        <p id="alertCount">0</p>
+    </div>
+    <div class="card cancelled">
+        <h3>Cancelled</h3>
+        <p id="cancelledCount">0</p>
+    </div>
+</div>
+    <h2>Accident Alerts</h2>
+   <table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Status</th>
+            <th>Action</th>
+            <th>Severity</th>
+        </tr>
+    </thead>
+    <tbody id="accidentTable">
+   </tbody>
+</table>
+    <h2>Accident Location</h2>
+    <div id="map"></div>
+</div>
+<audio id="alertSound">
+    <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg">
+</audio>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc, #eef2f7);
+    color: #1f2937;
+    line-height: 1.6;
+}
+h1 {
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+h2 {
+    margin: 45px 0 18px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1e3a8a;
+    border-left: 6px solid #2563eb;
+    padding-left: 14px;
+}
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+.summary {
+    display: flex;
+    gap: 26px;
+    margin: 30px 0;
+}
+.card {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 28px 24px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+}
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+.card h3 {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #374151;
+    font-weight: 500;
+}
+.card p {
+    font-size: 34px;
+    font-weight: 700;
+}
+.card.total p {
+    color: #1e40af;
+}
+.card.alert p {
+    color: #b91c1c;
+}
+.card.cancelled p {
+    color: #166534;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+table thead {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: #ffffff;
+}
+table th {
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+table td {
+    padding: 14px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+table tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+table tr:hover {
+    background-color: #e0e7ff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.status {
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+    display: inline-block;
+}
+.status.alert {
+    background-color: #fee2e2;
+    color: #b91c1c;
+}
+.status.cancelled {
+    background-color: #dcfce7;
+    color: #166534;
+}
+#map {
+    height: 420px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.14);
+}
+@media (max-width: 768px) {
+    .summary {
+        flex-direction: column;
+    }
+   h1 {
+        font-size: 22px;
+        padding: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .card p {
+        font-size: 28px;
+    }
+}
+.table-wrapper {
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+    transform: scale(1.05);
+}
+
+table th, table td {
+    padding: 18px;
+    font-size: 15px;
+}
+.alert-popup {
+    position: fixed;
+    top: 20px;
+    right: -350px;
+    background: linear-gradient(90deg, #4e4ec2, #bfbbd6);
+    color: white;
+    padding: 18px 26px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: right 0.5s ease;
+    z-index: 9999;
+}
+.alert-popup.show {
+    right: 20px;
+}
+.action-btn.navigate {
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
+    color: white;
+}
+.severity {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.severity.low {
+    background: #dcfce7;
+    color: #166534;
+}
+.severity.medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+.severity.high {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+.action-btn.alert {
+    background: linear-gradient(90deg, #f97316, #fb923c);
+    color: white;
+}
+.download-btn {
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #1e3a8a, #2563eb);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+}
+.download-btn:hover {
+    background: #1e40af;
+}
