@@ -4,7 +4,7 @@ An IoT-based smart accident detection and alert system designed to automatically
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Road accidents often result in delayed emergency response due to the inability of victims to report incidents manually. This project addresses that issue by using sensors and communication modules to **automatically detect accidents** and **send emergency alerts** with a live Google Maps location link.
 
@@ -12,7 +12,7 @@ The system works even when the victim is unconscious or unable to seek help, mak
 
 ---
 
-## ⚙️ System Features
+##  System Features
 
 - Automatic accident detection using motion and impact sensing  
 - Real-time GPS location tracking  
@@ -24,7 +24,7 @@ The system works even when the victim is unconscious or unable to seek help, mak
 
 ---
 
-## 🛠️ Hardware Components
+##  Hardware Components
 
 - ESP32 Development Board  
 - MPU6050 Accelerometer & Gyroscope  
@@ -36,7 +36,7 @@ The system works even when the victim is unconscious or unable to seek help, mak
 
 ---
 
-## 💻 Software Stack
+##  Software Stack
 
 - Arduino IDE  
 - Embedded C/C++  
@@ -45,7 +45,7 @@ The system works even when the victim is unconscious or unable to seek help, mak
 
 ---
 
-## 🧠 Working Principle
+##  Working Principle
 
 1. MPU6050 continuously monitors motion and impact data.  
 2. ESP32 processes sensor data using threshold-based logic.  
@@ -56,7 +56,7 @@ The system works even when the victim is unconscious or unable to seek help, mak
 
 ---
 
-## 🌐 Web Interface
+##  Web Interface
 
 A simplified web-based UI is implemented as an interface to:
 - Display system status  
@@ -67,7 +67,7 @@ The interface is lightweight, open-source, and does not rely on closed platforms
 
 ---
 
-## 🎯 Applications
+##  Applications
 
 - Smart vehicles  
 - Highway safety systems  
@@ -76,7 +76,7 @@ The interface is lightweight, open-source, and does not rely on closed platforms
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 - AI-based accident prediction  
 - Automatic ambulance dispatch  
@@ -85,7 +85,7 @@ The interface is lightweight, open-source, and does not rely on closed platforms
 
 ---
 
-## 👥 Team
+##  Team
 
 **ResQ Tech**  
 - Dilip V (Team Leader)  
@@ -95,12 +95,12 @@ The interface is lightweight, open-source, and does not rely on closed platforms
 
 ---
 
-## 📜 License
+##  License
 
 This project is open-source and intended for academic and educational purposes.
 
 ---
 
-## ⭐ Acknowledgement
+##  Acknowledgement
 
 Inspired by existing IoT-based accident detection research and community-driven open-source projects aimed at improving road safety.
